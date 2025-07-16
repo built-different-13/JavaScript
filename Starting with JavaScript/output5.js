@@ -6,3 +6,5 @@ var c = Math.pow(10,1000);
 console.log(c);
 var d = Math.pow(10,-2);
 console.log(d);
+var e = Number.MAX_VALUE;
+console.log(e);
