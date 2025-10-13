@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+
+html{
+    font-size: 18px;
+}
+
+#box{
+    height: 125px;
+    width: 125px;
+    background-color: red;
+    margin: 50px;
+}
+
+#box:hover{
+    box-shadow: 0px 0px 6px 2px grey;
+}
