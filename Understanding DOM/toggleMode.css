@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+}
+
+html{
+    font-size: 18px;
+}
+
+#outer{
+    height: 15px;
+    width: 75px;
+    border: 1px solid #181818;
+    border-radius: 30px;
+    margin: 30px auto 60px;
+    position: relative;
+}
+
+#inner{
+    height: 14px;
+    width: 14px;
+    background-color: #181818;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5px;
+    left: 1px;
+}
+
+#content{
+    text-align: center;
+    font-weight: 700;
+}
