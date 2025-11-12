@@ -1,0 +1,21 @@
+var source = document.querySelectorAll('.nav-menu li a');
+
+for (var i=0; i<source.length; i++) {
+    source[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        var value = this.getAttribute('data-value');
+        var target = document.getElementById(value);
+        var coordinates = target.getBoundingClientRect();
+        var current = 0;
+        var distance = coordinates.top;
+
+        var targetScroll = setInterval(function() {
+            if(current<=distance) {
+                window.scrollBy(0,50);
+                current+=50;
+            } else {
+                clearInterval(targetScroll);
+            }
+        }, 50);
+    });
+}
